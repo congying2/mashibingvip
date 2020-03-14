@@ -7,12 +7,26 @@
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="./lib/docsify@4.11.2/lib/themes/vue.css">
+  <style>
+    .app-nav {
+      position: fixed;
+    top: -17px;
+    left: 0px;
+    width: 100%;
+    background: #e5f5ee;
+    }
+  </style>
 </head>
 <body>
   <div data-app id="main">加载中</div>
   <script>
     window.$docsify = {
       el: '#main',
+      loadNavbar: true,
+      // mergeNavbar: true,
+      // loadSidebar: false,
+      // hideSidebar: false,
+      // mergeNavbar: false,
       name: '',
       repo: ''
     }
